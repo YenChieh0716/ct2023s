@@ -9,3 +9,5 @@
 > [hw11](https://yenchieh0716.github.io/ct2023s/hw11/)<br>
 > [hw12](https://yenchieh0716.github.io/ct2023s/hw12/)<br>
 
+#作業十比對結果
+> [result](https://colab.research.google.com/drive/1n6ftNBb9WpwuN96-xHlUVtmaS3nkVDLO)
