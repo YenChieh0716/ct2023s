@@ -5,7 +5,7 @@
 > [hw4](https://yenchieh0716.github.io/ct2023s/hw04/index.html)<br>
 > [hw5](https://yenchieh0716.github.io/ct2023s/hw05/)<br>
 > [hw6](https://yenchieh0716.github.io/ct2023s/hw06/index.html)<br>
-> [hw10](https://yenchieh0716.github.io/ct2023s/hw10/index.html)<br>
+> [hw10](https://yenchieh0716.github.io/ct2023s/hw10/website/index.html)<br>
 > [作業十](http://hw10.surge.sh)<br>
 > [hw11](https://yenchieh0716.github.io/ct2023s/hw11/)<br>
 > [hw12](https://yenchieh0716.github.io/ct2023s/hw12/)<br>
