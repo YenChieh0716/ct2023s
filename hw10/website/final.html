@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>步出夏門行·觀滄海</title>
+    <style type="text/css">
+        .switch {
+            top: 0;
+            left: 0;
+            background: var(--clr-primary-5);
+        }
+
+        .slide .switch {
+            left: 50%;
+        }
+
+        .preloader {
+            align-items: center;
+            visibility: visible;
+            z-index: 999;
+        }
+
+        .hide-preloader {
+            z-index: -999;
+            visibility: hidden;
+        }
+
+        /* Global */
+        html {
+            min-height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            padding: 1em;
+            /* color: rgba(249, 236, 237, 0.75); */
+            color: black;
+            /* font-weight: bold; */
+            font-family: 'Anonymous Pro', monospace;
+            /* background-color: rgb(159, 53, 58); */
+        }
+
+        .line-1 {
+            position: relative;
+            top: 50%;
+            margin: 0 auto;
+            border-left: 2px solid rgba(255, 255, 255, .75);
+            font-size: 20pt;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+        }
+
+        .line-title {
+            position: relative;
+            top: 50%;
+            right: 0;
+        }
+
+        .line-1 {
+            position: relative;
+            top: 50%;
+            margin: 0 auto;
+            border-left: 2px solid rgba(255, 255, 255, .75);
+            font-size: 20pt;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+        }
+
+        .line-2 {
+            position: relative;
+            top: 0%;
+            left: 0;
+            margin: 0 auto;
+            border-left: 2px solid rgba(255, 255, 255, .75);
+            font-size: 20pt;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+        }
+
+        /* Animation */
+        .anim-typewriter {
+            animation: typewriter 34s steps(3000) 500ms 1 normal both,
+                blinkTextCursor 1000ms steps(3000) infinite normal;
+        }
+
+        .anim-typewriter_title {
+            animation: typewriter_title 4s steps(3000) 500ms 1 normal both,
+                blinkTextCursor 1000ms steps(3000) infinite normal;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 51em;
+            }
+        }
+
+        @keyframes typewriter_title {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 10em;
+            }
+        }
+
+        @keyframes blinkTextCursor {
+            from {
+                border-left-color: rgba(255, 255, 255, .75);
+            }
+
+            to {
+                border-left-color: transparent;
+            }
+        }
+
+        @font-face {
+            font-family: ClassMateFont;
+            src: url(./111598025.ttf);
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: MyFont;
+            src: url(./108590037.ttf);
+            /* //src: './108590037.ttf'; */
+            font-weight: bold;
+        }
+
+        body {
+            writing-mode: vertical-rl;
+            font-family: 'ClassMateFont', serif;
+            /* BpmfZihiKaiStd.zip : 字嗨注音標楷 */
+            line-height: 3.5em;
+        }
+
+        p {
+            font-size: 24pt;
+            padding: 8px 0px;
+        }
+
+        .title {
+            font-family: 'MyFont', serif;
+        }
+
+        .myself {
+            font-family: 'MyFont', serif;
+            position: absolute;
+            top: 220px;
+            /* right: 160px; */
+        }
+
+        .friend {
+            font-family: 'ClassMateFont', serif;
+            position: absolute;
+            top: 630px;
+            right: 160px;
+        }
+
+        p {
+            border: solid #FFD6E0 1px;
+            height: 380px;
+        }
+
+        a {
+            color: yellow;
+        }
+    </style>
+</head>
+<script>
+    // const btn = document.querySelector('.switch-btn');
+    // const video = document.querySelector('.video-container');
+    // btn.addEventListener('click', function () { //新增點按鈕擊事件
+    //     if (!btn.classList.contains("slide")) { //確認按鈕Class是否有"slide"
+    //         btn.classList.add("slide"); //使按鈕內位移方塊往右移
+    //         video.pause(); //影片暫停
+    //     } else {
+    //         btn.classList.remove("slide"); //使按鈕內位移方塊往左移
+    //         video.play(); //影片繼續播放
+    //     };
+    // });
+
+    // const preloader = document.querySelector('.preloader');
+
+    // window.addEventListener('load', function () { //透過"load"事件來判斷整個網頁是否完全載入完成
+    //     preloader.classList.add('hide-preloader'); //隱藏preloader
+    // }); 
+</script>
+
+<body>
+    <!-- video -->
+    <video muted autoplay loop style="
+    width: 1538px;
+    position: relative;
+    left: 26px;
+    top: -141px;
+    height: 864px;
+">
+        <source src="./video5.mp4" type="video/mp4" />
+    </video>
+    <!-- anim-typewriter_title   -->
+    <p class="line-title  myself" style="
+    right: -67px;
+    height: auto;
+    top: 66px;
+    line-height: 2.5;
+    font-size: 45px;
+    border: 0;
+">
+        <span style="position: relative;top: 100px;">
+            步出夏門行·觀滄海
+        </span>
+        <!-- <br> -->
+        <!-- 朝代：魏晉<br> -->
+        <!-- <br> -->
+        <span style="
+        top: 180px;
+        position: absolute;
+        right: 100px;
+    ">作者：曹操</span>
+        <!-- <br> -->
+    </p>
+    <!-- anim-typewriter 
+     -->
+    <p class="line-1
+    myself" style="
+    right: 181px;
+    top: 185px;
+    line-height: 3.5;
+    height: 48%;
+">
+        東臨碣石，以觀滄海。<br>
+        水何澹澹，山島竦峙。<br>
+        樹木叢生，百草豐茂。<br>
+        秋風蕭瑟，洪波涌起。<br>
+        日月之行，若出其中。<br>
+        星漢燦爛，若出其裏。<br>
+        幸甚至哉，歌以詠志。<br>
+    </p>
+    <!-- anim-typewriter -->
+    <p class="line-1  friend" style="
+    right: 181px;
+    line-height: 3.5;
+    top: 542px;
+    height: 46%;
+">
+        東臨碣石，以觀滄海。<br>
+        水何澹澹，山島竦峙。<br>
+        樹木叢生，百草豐茂。<br>
+        秋風蕭瑟，洪波涌起。<br>
+        日月之行，若出其中。<br>
+        星漢燦爛，若出其裏。<br>
+        幸甚至哉，歌以詠志。<br>
+    </p>
+    <p class="line-2 myself" style="top: 360px;font-size: 23px;line-height: 3;height: auto;">
+        譯文<br>
+        向東進發登上碣石山，得以觀賞大海的奇景。<br>
+        海水波濤激盪，海中山島羅列，高聳挺立。<br>
+        我站在山巔，心中的波濤也像海浪在起伏。<br>
+        周圍是蔥蘢的樹木，豐茂的花草，寧靜的似在沉思。<br>
+        蕭瑟的風聲傳來了，草木動搖，海上掀起巨浪，<br>
+        在翻卷，在呼嘯，似要將宇宙吞沒。<br>
+        大海，多麼博大的胸懷啊，日月的升降起落，好像出自大海的胸中；<br>
+        銀河裏的燦爛羣星，也像從大海的懷抱中涌現出來的。<br>
+        啊，慶幸得很，美好無比，讓我們盡情歌唱，暢抒心中的情懷。<br>
+    </p>
+
+
+</body>
+
+</html>
