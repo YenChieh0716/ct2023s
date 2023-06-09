@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>步出夏門行·觀滄海</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        /* Global */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            color: black;
+            font-family: 'Anonymous Pro', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @font-face {
+            font-family: ClassMateFont;
+            src: url(./111598025.ttf);
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: MyFont;
+            src: url(./108590037.ttf);
+            font-weight: bold;
+        }
+
+        .myself {
+            font-family: 'MyFont', serif;
+            font-size: 25px;
+            line-height: 1.5;
+            /* position: relative;
+            top: 220px;
+            right: 160px;
+            max-height: 48%;
+            min-height: auto; */
+        }
+
+        .friend {
+            font-family: 'ClassMateFont', serif;
+            font-size: 30px;
+            line-height: 1.5;
+            /* position: relative;
+            top: 630px;
+            right: 160px; */
+        }
+
+        /* 视频背景 */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /*rwd样式 */
+        @media screen and (max-width: 768px) {
+            .video-background video {
+                /* width: 100%; */
+                height: 100vh;
+            }
+
+            .line-title,
+            .line-1,
+            .line-2 {
+                margin: 0;
+                text-align: center;
+            }
+
+            .line-1,
+            .line-2 {
+                margin-bottom: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 视频背景 -->
+    <div class="video-background">
+        <video muted autoplay loop>
+            <source src="./video5.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <!-- anim-typewriter_title -->
+    <p class="line-title myself">
+        <!-- 标题内容 -->
+        <span>
+            步出夏門行·觀滄海
+        </span>
+        <span>
+            作者：曹操
+        </span>
+    </p>
+
+    <!-- anim-typewriter -->
+    <p class="line-1 myself">
+        <!-- 文本内容 -->
+        東臨碣石，以觀滄海。<br>
+        水何澹澹，山島竦峙。<br>
+        樹木叢生，百草豐茂。<br>
+        秋風蕭瑟，洪波涌起。<br>
+        日月之行，若出其中。<br>
+        星漢燦爛，若出其裏。<br>
+        幸甚至哉，歌以詠志。<br>
+    </p>
+
+    <!-- anim-typewriter -->
+    <p class="line-1 friend">
+        <!-- 文本内容 -->
+        東臨碣石，以觀滄海。<br>
+        水何澹澹，山島竦峙。<br>
+        樹木叢生，百草豐茂。<br>
+        秋風蕭瑟，洪波涌起。<br>
+        日月之行，若出其中。<br>
+        星漢燦爛，若出其裏。<br>
+        幸甚至哉，歌以詠志。<br>
+    </p>
+
+    <!-- <p class="line-2 myself">
+        譯文<br>
+        向東進發登上碣石山，得以觀賞大海的奇景。<br>
+        海水波濤激盪，海中山島羅列，高聳挺立。<br>
+        我站在山巔，心中的波濤也像海浪在起伏。<br>
+        周圍是蔥蘢的樹木，豐茂的花草，寧靜的似在沉思。<br>
+        蕭瑟的風聲傳來了，草木動搖，海上掀起巨浪，<br>
+        在翻卷，在呼嘯，似要將宇宙吞沒。<br>
+        大海，多麼博大的胸懷啊，日月的升降起落，好像出自大海的胸中；<br>
+        銀河裏的燦爛羣星，也像從大海的懷抱中涌現出來的。<br>
+        啊，慶幸得很，美好無比，讓我們盡情歌唱，暢抒心中的情懷。<br>
+    </p> -->
+
+</body>
+
+</html>
